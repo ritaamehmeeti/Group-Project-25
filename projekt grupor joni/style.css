@@ -1,0 +1,64 @@
+/* Basic styling for the navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo image */
+.navbar .logo img {
+    height: 40px; /* Adjust logo size */
+}
+
+/* Navbar items */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.navbar .button-container {
+    display: flex;
+}
+
+.navbar .button-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar .button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Active link styling */
+.navbar ul li.active a {
+    color: #ffcc00; /* Highlight active link */
+}
