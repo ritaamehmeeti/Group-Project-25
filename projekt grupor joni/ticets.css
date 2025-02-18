@@ -28,16 +28,54 @@ body {
 
 .navbar ul li {
     margin: 0 15px;
+    position: relative;
 }
 
+/* Dropdown menu styling */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar .dropdown-menu li {
+    margin: 0;
+}
+
+.navbar .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+}
+
+.navbar .dropdown-menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Navbar links */
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for button-like effect */
 }
 
 .navbar ul li a:hover {
-    text-decoration: underline;
+    background-color: #555; /* Lighten color on hover */
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* Button styling */
@@ -52,6 +90,7 @@ body {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px; /* Rounded corners for button */
 }
 
 .navbar .button-container button:hover {
@@ -61,4 +100,10 @@ body {
 /* Active link styling */
 .navbar ul li.active a {
     color: #ffcc00; /* Highlight active link */
+}
+
+/* Lightened background color when hovering */
+.navbar ul li a:hover,
+.navbar .dropdown-menu li a:hover {
+    background-color: #555; /* Lightened background color */
 }

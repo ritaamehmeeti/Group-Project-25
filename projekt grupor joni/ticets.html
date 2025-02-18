@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav Bar</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="ticets.css">
 </head>
 <body>
     <div class="navbar">
@@ -14,15 +13,22 @@
         </div>
         <ul>
             <li><a href="#" onclick="setActive(this)">Home</a></li>
-            <li><a href="#" onclick="setActive(this)">About</a></li>
-            <li><a href="#" onclick="setActive(this)">Services</a></li>
-            <li><a href="#" onclick="setActive(this)">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="setActive(this)">Booking</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="setActive(this)">Latest News</a></li>
+            <li><a href="#" onclick="setActive(this)">Customer Reviews</a></li>
         </ul>
         <div class="button-container">
             <button onclick="showAlert()">Click Me</button>
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="ticets.js"></script>
 </body>
 </html>
