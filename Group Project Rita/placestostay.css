@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar .button-container {
+    display: flex;
+}
+
+.navbar .button-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar .button-container button:hover {
+    background-color: #0056b3;
+}
+
+.navbar ul li.active a {
+    color: #ffcc00;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.navbar .dropdown-menu li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+.stay-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.stay-container h1 {
+    color: #333;
+}
+
+.stay-container p {
+    font-size: 18px;
+    color: #666;
+}
+
+#stay-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.stay-item {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.stay-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.stay-item p {
+    color: #666;
+}
+
+.stay-item button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.stay-item button:hover {
+    background-color: #0056b3;
+}

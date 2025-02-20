@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Stay - WanderWay</title>
+    <link rel="stylesheet" href="placestostay.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#" onclick="setActive(this)">Home</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="setActive(this)">Booking</a>
+                <ul class="dropdown-menu">
+                    <li><a href="ticets.html">Railway</a></li>
+                    <li><a href="#">Air</a></li>
+                    <li><a href="#">Sea</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" onclick="setActive(this)">Places to Stay</a>
+                <ul class="dropdown-menu">
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="airbnbs.html">Airbnbs</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="setActive(this)">Customer Reviews</a></li>
+        </ul>
+        <div class="button-container">
+            <button onclick="showAlert()">Click Me</button>
+        </div>
+    </div>
+
+    <div class="team-section">
+        <img src="team.jpg" alt="WanderWay HQ Team" class="team-image">
+        <div class="team-text">
+            <p>At WanderWay, our team works tirelessly to ensure you have the best travel experience possible.</p>
+            <p>We research, plan, and optimize every travel package to make your journey seamless.</p>
+            <p>From customer support to hotel partnerships, every detail is handled with care.</p>
+            <p>Our passion for travel drives us to go above and beyond for our customers every day.</p>
+        </div>
+    </div>
+
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us!</p>
+        <button class="contact-button" style="background-color: green;">Call Us</button>
+        <button class="contact-button" style="background-color: blue;">Email Us</button>
+        <button class="contact-button" style="background-color: purple;">Live Chat</button>
+    </div>
+
+    <div class="stay-container">
+        <h1>Find the Perfect Place to Stay</h1>
+        <p>Choose from a range of top-rated hotels and cozy Airbnbs in your favorite destinations!</p>
+        <div id="stay-list">
+            <div class="stay-item">
+                <h3>Luxury Beachfront Hotel</h3>
+                <p>Enjoy a relaxing stay with stunning ocean views and world-class amenities.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="stay-item">
+                <h3>Modern City Apartment</h3>
+                <p>Stay in the heart of the city with all the comfort and style you need.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="stay-item">
+                <h3>Cozy Mountain Cabin</h3>
+                <p>Escape to the mountains for a peaceful and serene getaway.</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="placestostay.js"></script>
+</body>
+
+<footer class="footer">
+    <p>&copy; 2025 Travel Agency. All Rights Reserved.</p>
+</footer>
+
+</html>

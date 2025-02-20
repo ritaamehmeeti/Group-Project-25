@@ -1,4 +1,4 @@
-/* Basic styling for the navbar */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,12 +13,12 @@ body {
     color: white;
 }
 
-/* Logo image */
+
 .navbar .logo img {
-    height: 40px; /* Adjust logo size */
+    height: 40px; 
 }
 
-/* Navbar items */
+
 .navbar ul {
     list-style: none;
     display: flex;
@@ -31,7 +31,7 @@ body {
     position: relative;
 }
 
-/* Dropdown menu styling */
+
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -63,22 +63,21 @@ body {
     border-radius: 5px;
 }
 
-/* Navbar links */
+
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;
-    border-radius: 5px; /* Rounded corners for button-like effect */
+    border-radius: 5px;
 }
 
 .navbar ul li a:hover {
-    background-color: #555; /* Lighten color on hover */
+    background-color: #555;
     text-decoration: none;
     border-radius: 5px;
 }
 
-/* Button styling */
 .navbar .button-container {
     display: flex;
 }
@@ -90,20 +89,20 @@ body {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px; /* Rounded corners for button */
+    border-radius: 5px; 
 }
 
 .navbar .button-container button:hover {
     background-color: #0056b3;
 }
 
-/* Active link styling */
+
 .navbar ul li.active a {
-    color: #ffcc00; /* Highlight active link */
+    color: #ffcc00; 
 }
 
-/* Lightened background color when hovering */
+
 .navbar ul li a:hover,
 .navbar .dropdown-menu li a:hover {
-    background-color: #555; /* Lightened background color */
+    background-color: #555;
 }
