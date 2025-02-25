@@ -1,0 +1,273 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Destination Section */
+.destination-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.destination {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+}
+
+.destination-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.destination-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.destination-info p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #ecf0f1;
+    padding: 40px;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #335c67;
+    color: white;
+}
+
+
+.navbar .logo img {
+    height: 40px; 
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #335c67;
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar .dropdown-menu li {
+    margin: 0;
+}
+
+.navbar .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+}
+
+.navbar .dropdown-menu li a:hover {
+    background-color: #6096ba;
+    border-radius: 5px;
+}
+
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px; 
+}
+
+.navbar ul li a:hover {
+    background-color: #6096ba;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.navbar .button-container {
+    display: flex;
+}
+
+.navbar .button-container button {
+    padding: 10px 20px;
+    background-color: #6096ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+.navbar .button-container button:hover {
+    background-color: #6096ba;
+}
+
+
+.navbar ul li.active a {
+    color: white; 
+}
+
+.navbar ul li a:hover,
+.navbar .dropdown-menu li a:hover {
+    background-color: #6096ba; 
+}
