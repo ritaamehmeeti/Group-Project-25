@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home-joni.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#" onclick="setActive(this)">Home</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="setActive(this)">Booking</a>
+                <ul class="dropdown-menu">
+                    <li><a href="ticets.html">Railway</a></li>
+                    <li><a href="air.html">Air</a></li>
+                    <li><a href="sea.html">Sea</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="setActive(this)">Latest News</a></li>
+            <li><a href="#" onclick="setActive(this)">Customer Reviews</a></li>
+        </ul>
+        <div class="button-container">
+            <button onclick="showAlert()" id="loginBtn">Log in</button>
+        </div>
+    </div>
+    
+    <main>
+        <section class="hero">
+            <h2>Your Adventure Awaits</h2>
+            <p>Explore breathtaking destinations in style.</p>
+            <a href="#destinations" class="cta-btn">Explore Now</a>
+        </section>
+
+        <section id="destinations" class="destination-section">
+            <h2>Popular Destinations</h2>
+            <div class="destination" id="train">
+                <img src="images/train.jpg" alt="Train Adventure">
+                <div class="destination-info">
+                    <h3>Train Adventures</h3>
+                    <p>Relax and enjoy stunning landscapes on board our luxury trains.</p>
+                </div>
+            </div>
+            <div class="destination" id="airplane">
+                <img src="images/airplane.jpg" alt="Airplane Adventure">
+                <div class="destination-info">
+                    <h3>Airplane Journeys</h3>
+                    <p>Fly high to breathtaking destinations in comfort and luxury.</p>
+                </div>
+            </div>
+            <div class="destination" id="cruise">
+                <img src="images/cruise.jpg" alt="Cruise Comfort">
+                <div class="destination-info">
+                    <h3>Cruise Comfort</h3>
+                    <p>Sail away into the sunset with our exclusive cruise packages.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>What Our Customers Say</h2>
+            <div class="review">
+                <p>"Incredible experience! Wonder Way turned our dream vacation into reality!" - Sarah</p>
+            </div>
+            <div class="review">
+                <p>"Unmatched comfort and service! I recommend Wonder Way to everyone." - John</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>sadasdasdasda</footer>
+
+    <script src="home-joni.js"></script>
+</body>
+</html>
+
+
+
+
+
+
