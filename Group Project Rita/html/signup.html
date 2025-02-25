@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tickets.html" >Booking</a>
+                <ul class="dropdown-menu">
+                    <li><a href="railway.html">Railway</a></li>
+                    <li><a href="air.html">Air</a></li>
+                    <li><a href="sea.html">Sea</a></li>
+                </ul>
+            </li>
+            <li><a href="placestostay.html" >Places to stay</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+        <div class="button-container">
+            <button id="log-in-button">Log in</button>
+            
+        </div>
+    </div>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <div class="input-box">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" placeholder="Enter your full name">
+        </div>
+        <div class="input-box">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="input-box">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="input-box">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password">
+        </div>
+        <button class="signup-btn" onclick="validateSignup()">Sign Up</button>
+        <p>Already have an account? <a href="login.html" class="login-link">Login</a></p>
+    </div>
+
+    
+    <script src="Js/sign.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="css/air.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tickets.html" >Booking</a>
+                <ul class="dropdown-menu">
+                    <li><a href="railway.html">Railway</a></li>
+                    <li><a href="air.html">Air</a></li>
+                    <li><a href="sea.html">Sea</a></li>
+                </ul>
+            </li>
+            <li><a href="placestostay.html" >Places to stay</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+        <div class="button-container">
+            <button id="log-in-button">Log in</button>
+            
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>Experience the Beauty of Airplane Travel</h1>
+        
+        <div class="section">
+          <div class="text">
+            <h2>Relax and Enjoy the Journey</h2>
+            <p>
+                Sit back, relax, and enjoy the journey as the plane soars through the skies. Embrace the peaceful atmosphere, the gentle hum of the engines, and the breathtaking views from above. Let go of any stress, unwind, and savor the excitement of traveling to new destinations.
+            </p>
+          </div>
+          <img src="https://cdn.gamma.app/sgnktmw64w2hbg4/generated-images/aeYrJeRcSFpkcVAVKsX5-.jpg" alt="Scenic Airplain View">
+        </div>
+        
+        <div class="section">
+          <img src="https://cdn.gamma.app/sgnktmw64w2hbg4/generated-images/XxVE937hEOsI3qWJzao81.jpg" alt="Airplain Travel">
+          <div class="text">
+            <h2>Adventure Awaits</h2>
+            <p>
+                Adventure awaits as you step aboard, ready to explore the unknown. With every mile, new horizons unfold, and possibilities arise. Let your curiosity guide you through thrilling destinations, unexpected experiences, and unforgettable moments. The journey ahead promises excitement—embrace it, for adventure is just a flight away!
+            </p>
+          </div>
+        </div>
+        
+        <div class="section">
+          <div class="text">
+            <h2>Unparalleled Comfort</h2>
+            <p>
+                Experience unparalleled comfort as you settle into your seat, where every detail is designed for relaxation. Soft cushions, spacious legroom, and soothing amenities create the perfect environment to unwind. Whether you're flying for business or leisure, enjoy a smooth, restful journey with luxury at every turn.
+            </p>
+          </div>
+          <img src="https://cdn.gamma.app/sgnktmw64w2hbg4/generated-images/r7vk-n7-dmfw0kGRXArjm.jpg" alt="Airplain over the Mountains">
+        </div>
+        
+        <div class="section">
+          <img src="https://cdn.gamma.app/sgnktmw64w2hbg4/generated-images/Yg4WYZco9AUc6j18haYfy.jpg" alt="Airplain at an airport">
+          <div class="text">
+            <h2>Eco-Friendly Travel</h2>
+            <p>
+                Eco-friendly travel is all about reducing your carbon footprint while exploring the world. Modern airlines are adopting sustainable practices, from fuel-efficient planes to carbon offset programs. By choosing eco-conscious options, you can enjoy your journey while contributing to a cleaner planet, making each trip a step toward a greener future.
+            </p>
+          </div>
+        </div>
+        
+        <div class="section">
+          <div class="text">
+            <h2>Convenience and Accessibility</h2>
+            <p>
+                Convenience and accessibility make travel effortless for everyone. With streamlined check-ins, easy online booking, and accessible seating options, getting to your destination is a breeze. Modern airports and aircraft are designed with all travelers in mind, ensuring smooth, comfortable experiences whether you're flying for business or leisure. 
+            </p>
+          </div>
+          <img src="https://cdn.gamma.app/sgnktmw64w2hbg4/generated-images/JGA4MsyKhD3AKkCK5aNeu.jpg" alt="Airplain over City">
+        </div>
+      </div>
+    
+      
+
+
+
+
+
+      <div class="ticket-counter" id="booking">
+        <h2>Book Your Airplane Ticket</h2>
+        <div class="ticket-section">
+            <div class="ticket-card">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="ticket-card">
+                <label for="from">From:</label>
+                <input type="text" id="from" placeholder="Departure City" required>
+            </div>
+            <div class="ticket-card">
+                <label for="to">To:</label>
+                <input type="text" id="to" placeholder="Destination City" required>
+            </div>
+            <div class="ticket-card">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="ticket-card">
+                <label for="time">Time of Departure:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="ticket-card">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="ticket-card">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="ticket-card">
+                <label for="request">Special Request:</label>
+                <textarea id="request" placeholder="Enter any special requests"></textarea>
+            </div>
+        </div>
+        <div id="btn2"><button onclick="bookTicket()">Book Now</button></div>
+        <p id="confirmation"></p>
+    </div>
+    
+
+    <div id="confirmation-banner" style="display:none; background-color: #4CAF50; color: white; padding: 10px; text-align: center; position: absolute; top: 0; width: 100%; z-index: 9999;">
+        Your ticket has been booked!
+    </div>
+    
+    
+
+    <footer class="footer">
+        <p>&copy; 2025 WonderWay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Js/air.js"></script>
+</body>
+</html>
+
+
+
+
+

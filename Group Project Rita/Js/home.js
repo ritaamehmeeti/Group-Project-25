@@ -1,9 +1,9 @@
-// JavaScript to show full-screen articles when clicked on a destination
+
 document.querySelectorAll('.destination').forEach(item => {
     item.addEventListener('click', () => {
         const destinationId = item.id;
 
-        // Open full-screen view for the clicked destination
+      
         openFullScreen(destinationId);
     });
 });
@@ -24,13 +24,13 @@ function openFullScreen(destinationId) {
             articleText = "<h2>Unknown Destination</h2><p>Explore an unforgettable adventure with us.</p>";
     }
 
-    // Display the article in a full-screen overlay
+  
     const overlay = document.createElement('div');
     overlay.classList.add('overlay');
     overlay.innerHTML = `<div class="overlay-content">${articleText}<button class="close-btn">Close</button></div>`;
     document.body.appendChild(overlay);
 
-    // Close the full-screen overlay
+
     document.querySelector('.close-btn').addEventListener('click', () => {
         document.body.removeChild(overlay);
     });
