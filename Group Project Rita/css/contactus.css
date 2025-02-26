@@ -14,6 +14,106 @@ body {
     margin: 20px;  
 }
 
+.navbar {
+    margin-top: 0px;
+    padding: 0%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #6a82fb, #3273b4, #3ab9b0);
+    color: white;
+
+
+}
+
+.navbar .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    position: absolute;
+    top: -45px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 300px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Georgia', serif; 
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar .button-container {
+    margin-left: auto;
+}
+
+.navbar .button-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Georgia', serif; 
+}
+
+.navbar .button-container button:hover {
+    background-color: #0056b3;
+}
+
+.navbar ul li.active a {
+    color: #ffcc00;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.navbar .dropdown-menu li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Georgia', serif; 
+}
+
+.navbar .dropdown-menu li a:hover {
+    background-color: #555;
+}
+
 .container {
     background-color: white;
     padding: 20px;

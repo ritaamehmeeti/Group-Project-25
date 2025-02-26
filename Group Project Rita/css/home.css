@@ -35,23 +35,48 @@ header .logo h1 {
     font-weight: bold;
 }
 
-nav a {
+
+.hero {
+    position: relative;
+    text-align: center;
     color: white;
-    margin: 0 15px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+    padding: 100px 20px;
 }
 
-nav a:hover {
-    color: #e74c3c;
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Sends image behind the text */
 }
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Keeps text above the image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Hero Section */
 .hero {
     background: url('images/hero-image.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 100px 20px;
-    color: white;
+    color: black;
 }
 
 .hero h2 {
@@ -65,7 +90,7 @@ nav a:hover {
 }
 
 .cta-btn {
-    background-color: #e74c3c;
+    background-color: black;
     color: white;
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -74,7 +99,7 @@ nav a:hover {
 }
 
 .cta-btn:hover {
-    background-color: #c0392b;
+    background-color: black;
 }
 
 /* Destination Section */
@@ -122,7 +147,7 @@ nav a:hover {
 
 /* Reviews Section */
 .reviews {
-    background-color: #ecf0f1;
+
     padding: 40px;
     text-align: center;
 }
@@ -145,13 +170,9 @@ nav a:hover {
     color: #34495e;
 }
 
-/* Footer */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+
+
+
 
 
 
@@ -170,104 +191,202 @@ footer {
 
 
 .navbar {
+    margin-top: 0px;
+    padding: 0%;
+    height: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #335c67;
+    background: linear-gradient(90deg, #6a82fb, #3273b4, #3ab9b0);
     color: white;
-}
-
-
-.navbar .logo img {
-    height: 40px; 
-}
-
-
-.navbar ul {
+  
+  
+  }
+  
+  .navbar .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    height: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    position: absolute;
+    top: -45px;
+  }
+  
+  .navbar ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-}
-
-.navbar ul li {
+    margin-left: 300px;
+  }
+  
+  .navbar ul li {
     margin: 0 15px;
     position: relative;
-}
-
-
-.navbar .dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.navbar .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #335c67;
-    border-radius: 5px;
-    padding: 10px;
-    list-style: none;
-}
-
-.navbar .dropdown-menu li {
-    margin: 0;
-}
-
-.navbar .dropdown-menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    display: block;
-}
-
-.navbar .dropdown-menu li a:hover {
-    background-color: #6096ba;
-    border-radius: 5px;
-}
-
-
-.navbar ul li a {
+  }
+  
+  .navbar ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-family: 'Georgia', serif; 
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar .button-container {
+    margin-left: auto;
+  }
+  
+  .navbar .button-container button {
     padding: 10px 20px;
-    border-radius: 5px; 
-}
-
-.navbar ul li a:hover {
-    background-color: #6096ba;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-
-.navbar .button-container {
-    display: flex;
-}
-
-.navbar .button-container button {
-    padding: 10px 20px;
-    background-color: #6096ba;
+    background-color: #007BFF;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px; 
-}
+    font-family: 'Georgia', serif; 
+  }
+  
+  .navbar .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .navbar ul li.active a {
+    color: #ffcc00;
+  }
+  
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .navbar .dropdown-menu li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Georgia', serif; 
+  }
+  
+  .navbar .dropdown-menu li a:hover {
+    background-color: #555;
+  }
+  
 
-.navbar .button-container button:hover {
-    background-color: #6096ba;
-}
 
 
-.navbar ul li.active a {
-    color: white; 
-}
 
-.navbar ul li a:hover,
-.navbar .dropdown-menu li a:hover {
-    background-color: #6096ba; 
-}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: linear-gradient(90deg, #6a82fb, #3273b4, #3ab9b0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links,
+  .footer-contact,
+  .footer-faq {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media a {
+    margin-right: 15px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+  
+    .navbar .button-container {
+        margin: 10px 0;
+    }
+  
+    #stay-list {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .stay-item {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .stay-item button {
+        margin-top: 10px;
+        padding: 10px 15px;
+        border: none;
+        background-color: #007BFF;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 25px; 
+    }
+    
+  
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .booking-form input,
+    .booking-form select,
+    .booking-form button {
+        width: 90%;
+    }
+  }

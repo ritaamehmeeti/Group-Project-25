@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Stay - WanderWay</title>
+    <link rel="stylesheet" href="css/placestostay.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="tickets.html" >Booking</a>
+                <ul class="dropdown-menu">
+                    <li><a href="ticets.html">Railway</a></li>
+                    <li><a href="air.html">Air</a></li>
+                    <li><a href="sea.html">Sea</a></li>
+                </ul>
+            </li>
+            <li><a href="placestostay.html" >Places to stay</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+        <div class="button-container">
+            <button id="log-in-button">Log in</button>
+            
+        </div>
+    </div>
+    <main>
+    <div class="big-image-container">
+        <img src="img/team.jpg" alt="Booking Skills" class="big-image">
+        <div class="text-container">
+            <p class="booking-skills-paragraph">
+                At our company, we pride ourselves on our exceptional booking skills. Our dedicated team works tirelessly to find you the best accommodations that fit your needs and budget. With extensive industry connections, we secure exclusive deals and offers.
+            </p>
+            <p class="detailed-paragraph">
+                We understand that every traveler is unique, and we strive to cater to your individual preferences. Our experienced agents are trained to listen and provide tailored recommendations that meet your specific desires.
+            </p>
+        </div>
+    </div>
+    
+
+    <div class="stay-container">
+        <h1>Find the Perfect Place to Stay</h1>
+        <p>Choose from top-rated hotels and cozy Airbnbs!</p>
+        <div id="stay-list">
+            <div class="stay-item">
+                <img src="img/airbnb1.jpg" alt="Luxury Beachfront Hotel" class="stay-image">
+                <h3>Luxury Beachfront Hotel</h3>
+                <p>Relax with stunning ocean views.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="stay-item">
+                <img src="airbnb2.jpg" alt="Modern City Apartment" class="stay-image">
+                <h3>Modern City Hotel</h3>
+                <p>Stay in the heart of the city.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="stay-item">
+                <img src="airbnb3.jpg" alt="Cozy Mountain Cabin" class="stay-image">
+                <h3>Paris Tower View Apartment</h3>
+                <p>Escape to the mountains.</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-form-container">
+        <h2>Book Your Stay</h2>
+        <form id="booking-form" class="booking-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <select id="accommodation" required>
+                <option value="" disabled selected>Select Accommodation</option>
+                <option value="hotel">Hotel</option>
+                <option value="airbnb">Airbnb</option>
+            </select>
+            <input type="date" id="checkin-date" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmation-message" style="display: none; margin-top: 20px;"></div>
+    </div>
+    
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-faq">
+                <h3>FAQs</h3>
+                <ul>
+                    <li><a href="#">What is your cancellation policy?</a></li>
+                    <li><a href="#">How can I change my booking?</a></li>
+                    <li><a href="#">Do you offer discounts for groups?</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Location: 123 WanderWay, Travel City</p>
+                <p>Phone: (123) 456-7890</p>
+                <div class="social-media">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+    
+    
+    <script src="Js/placestostay.js"></script>
+</body>
+</html>

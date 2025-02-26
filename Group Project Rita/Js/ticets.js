@@ -83,7 +83,7 @@ function bookTicket() {
 
 
 
-document.getElementById("loginBtn").addEventListener("click", function() {
+document.getElementById("log-in-button").addEventListener("click", function() {
   window.location.href = "login.html";
 });
 

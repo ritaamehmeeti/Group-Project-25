@@ -84,8 +84,7 @@ function bookTicket() {
 
 
 
-
-document.getElementById("loginBtn").addEventListener("click", function() {
+document.getElementById("log-in-button").addEventListener("click", function() {
   window.location.href = "login.html";
 });
 
@@ -162,6 +161,7 @@ function bookTicket() {
 document.addEventListener("DOMContentLoaded", updateLoginUI);
 
 document.getElementById("loginBtn").onclick = login;
+
 
 
 

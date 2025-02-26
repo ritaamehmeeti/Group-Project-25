@@ -4,13 +4,16 @@ body {
 }
 
 .navbar {
+    margin-top: 0px;
+    padding: 0%;
     height: 60px;
     display: flex;
     align-items: center;
     padding: 10px 20px;
     background: linear-gradient(90deg, #6a82fb, #3273b4, #3ab9b0);
     color: white;
-    overflow: hidden;
+
+
 }
 
 .navbar .logo {
@@ -170,6 +173,7 @@ body {
 
 .big-image-container {
     display: flex;
+
     align-items: center;
     justify-content: center;
     gap: 20px;
